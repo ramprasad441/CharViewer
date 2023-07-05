@@ -1,0 +1,12 @@
+
+<resources>
+
+
+    <style name="Base.Theme.SimpsonTheme" parent="Theme.AppCompat.DayNight">
+       <!-- <item name="colorPrimary">@color/md_theme_light_primary</item>-->
+       <!-- <item name="colorPrimaryDark">@color/md_theme_light_primary</item>-->
+        <!-- Blah blah -->
+    </style>
+
+    <!--<style name="Theme.SimpsonTheme" parent="Base.Theme.SimpsonTheme" />-->
+</resources>

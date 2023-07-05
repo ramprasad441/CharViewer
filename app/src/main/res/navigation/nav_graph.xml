@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/CharactersListFragment">
+
+    <fragment
+        android:id="@+id/CharactersListFragment"
+        android:name="com.ramprasad.charviewer.view.CharactersListFragment"
+        android:label="Character List"
+        tools:layout="@layout/fragment_characters_list">
+
+        <action
+            android:id="@+id/action_ListFragment_to_DetailFragment"
+            app:destination="@+id/characterDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.ramprasad.charviewer.view.CharacterDetailsFragment"
+        android:label="Detail Screen"
+        tools:layout="@layout/fragment_character_details">
+
+        <action
+            android:id="@+id/action_DetailFragment_to_ListFragment"
+            app:destination="@+id/ListFragment" />
+    </fragment>
+
+</navigation>
